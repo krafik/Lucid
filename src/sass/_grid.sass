@@ -1,0 +1,24 @@
+*
+  box-sizing: border-box
+
+//XL
+.container
+  max-width: 1170px
+  margin: auto
+//если ширина больше 1199px, значит контейнер обычный -> 1170px
+
+//Large ≥992px
+@media (max-width: 1199px) //если ширина экрана меньше 1199px, то ширина контейнера 960px
+  .container
+    max-width: 960px
+
+//Medium ≥768px
+@media (max-width: 991px) //если ширина экрана меньше 992px, то ширина контейнера 750px
+  .container
+    max-width: 750px
+
+//Small ≥576px
+@media (max-width: 768px) //если ширина экрана меньше 768px, то ширина контейнера 100%(вся ширина экрана. т.е. 768рх)
+  .container
+    max-width: 100%
+    padding: 0 20px

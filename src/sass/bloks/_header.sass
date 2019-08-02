@@ -1,0 +1,145 @@
+.header
+  background: url('../img/header/header-bg.jpg') no-repeat left
+  background-size: cover
+
+.navbar
+  // background: #cccccc
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 40px 0
+.nav
+  &__link
+    position: relative
+    margin-right: 10px
+    +SansSemibold
+    text-decoration: none
+    font-size: 16px
+    color: #fffefe
+    &_active, &:hover
+      &:before
+        content: ''
+        width: 45%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -9px
+        left: 0px
+        // right: 0px
+      &:after
+        content: ''
+        width: 45%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -9px
+        // left: 0px
+        right: 0px
+
+.logo
+  &__text
+    font-size: 24px
+    +Quickbold
+    // line-height: 58px
+    text-transform: uppercase
+    letter-spacing: -2.4px
+    color: #ffffff
+  &__descr
+    display: inline-block
+    width: 44px
+    +SansReg
+    font-size: 9px
+    text-transform: uppercase
+    letter-spacing: 1.26px
+    color: #ffffff
+    opacity: 0.3
+
+.hero
+  margin-top: 10px
+  &-block
+    display: flex
+    // align-items: center
+    justify-content: space-between
+    &__descr
+      max-width: 480px
+    &__image
+      display: flex
+      align-items: flex-end
+
+.description
+  margin-top: 25px
+  &__intro
+    +Sansbold
+    color: #008ed6
+    font-size: 14px
+    letter-spacing: 1.4px
+    text-transform: uppercase
+  &__title
+    +SansSemibold
+    font-size: 48px
+    color: #ffffff
+  &__text
+    color: #999999
+    font-size: 18px
+    +SansReg
+    line-height: 26px
+  &__buttons
+    margin: 60px 0
+.buttons
+  &__button
+    width: 160px
+    height: 50px
+    box-shadow: 0 0 3px rgba(3, 3, 3, 0.1)
+    border-radius: 3px
+    font-size: 14px
+    text-transform: uppercase
+    +Sansbold
+    color: #ffffff
+    &_primary
+      border: none
+      background-color: #008ed6
+    &_secondary
+      margin-left: 20px
+      border: 1px solid rgba(255, 255, 255, 0.2)
+      background-color: transparent
+
+@media (max-width: 991px)
+  .description
+    &__intro
+      font-size: 10px
+    &__title
+      font-size: 30px
+    &__buttons
+      display: flex
+  .hero
+    &-block
+      &__image
+        img
+          width: 400px
+@media (max-width: 768px)
+  .hero
+    &-block
+      &__image
+        display: none
+
+@media (max-width: 576px)
+  .navbar
+    &__nav
+      display: flex
+      flex-wrap: wrap
+      width: 250px
+      justify-content: center
+  .nav
+    &__link
+      margin-bottom: 15px
+  .hero
+    &-block
+      &__descr
+        max-width: 280px
+
+@media (max-width: 320px)
+  .hero
+    &-block
+      &__descr
+        max-width: 280px

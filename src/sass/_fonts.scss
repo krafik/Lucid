@@ -1,0 +1,71 @@
+//font for logo
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url('../fonts/Quicksand/Quicksand-Bold.eot');
+  src: url('../fonts/Quicksand/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Quicksand/Quicksand-Bold.woff') format('woff'),
+  url('../fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+//font for all page
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('');
+  src: url('../fonts/SourceSansPro/SourceSansPro-Light.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-Light.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Regular.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-Regular.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url('../fonts/SourceSansPro/SourceSansPro-SemiBold.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-SemiBold.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Bold.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-Bold.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@mixin Quickbold {
+  font-family: 'Quicksand Bold', sans-serif;
+}
+
+@mixin Sansbold {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+}
+@mixin SansSemibold {
+  font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+@mixin SansReg {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+}
+@mixin SansLight {
+  font-family: 'Source Sans Pro Light', sans-serif;
+}
+
+
