@@ -1,0 +1,82 @@
+.section
+  &-title
+    color: #008ed6
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1.4px
+    +Sansbold
+  &-descr
+    position: relative
+    margin-top: 30px
+    text-align: center
+    color: #1a1a1a
+    font-size: 36px
+    +SansSemibold
+    &:before
+        content: ''
+        width: 2.5%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -25px
+        left: 47%
+    &:after
+      content: ''
+      width: 2.5%
+      height: 2px
+      background-color: #008ed6
+      position: absolute
+      bottom: -25px
+      right: 47%
+
+.overview
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      text-align: center
+      margin-top: 70px
+      &:first-child
+        .overview-block__image
+          padding: 31px 28px
+      &:last-child
+        .overview-block__image
+          padding: 28px 35px
+    &__title
+      font-size: 24px
+    &__text
+      max-width: 229px
+      margin: auto
+      color: #999999
+      font-size: 17px
+      line-height: 36px
+    &__image
+      display: inline-block
+      padding: 28px
+      border: 1px solid #ccc
+      border-radius: 60px
+
+@media (max-width: 991px)
+  .section
+    &-title
+      font-size: 12px
+    &-descr
+      font-size: 26px
+  .overview
+    &-block
+      &__item
+        width: 50%
+        align-items: center
+      &__title
+        font-size: 20px
+      &__text
+        font-size: 15px
+
+@media (max-width: 576px)
+  .overview
+    &-block
+      &__item
+        width: 100%
+        align-items: center
