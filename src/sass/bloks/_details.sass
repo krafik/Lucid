@@ -1,0 +1,78 @@
+.details
+  border-top: 1px solid #ededed
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-basis: 50%
+    &__descr
+      margin-top: 30px
+      max-width: 468px
+    &__text
+      padding: 30px 0
+      color: #999999
+      font-size: 18px
+      line-height: 26px
+      margin: 0
+    &__list
+      list-style: none
+      padding: 0
+      line-height: 36px
+      margin: 0
+      li
+        &:nth-child(2),&:nth-child(3)
+          img
+            padding: 0 8px
+        img
+          padding: 0 5px 
+        span
+          margin-left: 15px
+.section
+  &__details
+    padding-bottom: 0
+  &__descr
+    margin-top: 0
+    position: relative
+    &_left
+      &:before
+        content: ''
+        width: 5.5%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -25px
+        left: 0
+      &:after
+        content: ''
+        width: 5.5%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -25px
+        right: 88%
+
+@media (max-width: 991px)
+  .section
+    &__details
+      padding-bottom: 60px
+  .details
+    &-block
+      &__descr
+        margin-top: 0
+@media (max-width: 768px)
+  .details
+    &-block
+      justify-content: center
+      &__image
+        display: none
+
+  .section
+    &__title
+      &_left
+        text-align: center
+    &__descr
+      &_left
+        text-align: center
+        &:before
+          left: 44%
+        &:after
+          right: 44%

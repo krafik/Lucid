@@ -1,19 +1,11 @@
 .section
-  &-title
-    color: #008ed6
-    font-size: 14px
-    text-align: center
-    text-transform: uppercase
-    letter-spacing: 1.4px
-    +Sansbold
-  &-descr
-    position: relative
-    margin-top: 30px
-    text-align: center
-    color: #1a1a1a
-    font-size: 36px
-    +SansSemibold
-    &:before
+  &__title
+    &_center
+      text-align: center
+  &__descr
+    &_center
+      text-align: center
+      &:before
         content: ''
         width: 2.5%
         height: 2px
@@ -21,15 +13,14 @@
         position: absolute
         bottom: -25px
         left: 47%
-    &:after
-      content: ''
-      width: 2.5%
-      height: 2px
-      background-color: #008ed6
-      position: absolute
-      bottom: -25px
-      right: 47%
-
+      &:after
+        content: ''
+        width: 2.5%
+        height: 2px
+        background-color: #008ed6
+        position: absolute
+        bottom: -25px
+        right: 47%
 .overview
   &-block
     display: flex
@@ -59,11 +50,7 @@
       border-radius: 60px
 
 @media (max-width: 991px)
-  .section
-    &-title
-      font-size: 12px
-    &-descr
-      font-size: 26px
+
   .overview
     &-block
       &__item
