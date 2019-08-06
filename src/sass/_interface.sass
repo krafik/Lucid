@@ -26,39 +26,42 @@ body
   &__title
     color: #008ed6
     font-size: 14px
-    // text-align: center
     text-transform: uppercase
     letter-spacing: 1.4px
     +Sansbold
   &__descr
     position: relative
     margin-top: 30px
-    // text-align: center
     color: #1a1a1a
     font-size: 36px
     +SansSemibold
-    &_center
-      &:before
+    &_center, &_left
+      &:before, &:after
         content: ''
         width: 2.5%
         height: 2px
         background-color: #008ed6
         position: absolute
         bottom: -25px
-        left: 47%
-      &:after
-        content: ''
-        width: 2.5%
-        height: 2px
-        background-color: #008ed6
-        position: absolute
-        bottom: -25px
-        right: 47%
 
-    // margin-bottom: 100px
+
 @media (max-width: 991px)
   .section
     &__title
       font-size: 12px
     &__descr
       font-size: 26px
+
+
+@media (max-width: 768px)
+  .section
+    &__title
+      &_left
+        text-align: center
+    &__descr
+      &_left
+        text-align: center
+        &:before
+          left: 44%!important
+        &:after
+          right: 44%!important
