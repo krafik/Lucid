@@ -38,11 +38,19 @@ body
     &_center, &_left
       &:before, &:after
         content: ''
-        width: 2.5%
+        width: 20px
         height: 2px
         background-color: #008ed6
         position: absolute
         bottom: -25px
+    &_center
+      text-align: center
+      &:before
+        left: 48%
+      &:after
+        right: 48%
+    &_white
+      color: #ffffff
 
 
 @media (max-width: 991px)

@@ -1,0 +1,65 @@
+.slider
+  margin-top: 90px
+  &__dots
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    padding: 0
+    margin-top: 100px
+    li
+      width: 8px
+      height: 8px
+      background-color: transparent
+      border-radius: 50%
+      border: 1px solid rgba(255, 255, 255, 0.2)
+      margin: 5px 19px
+      &:hover
+        cursor: pointer
+      &.slick-active
+        background-color: #ffffff
+        border: none
+        width: 14px
+        height: 14px
+    button
+      display: none
+  &__item
+    margin: 0 25px
+    &:focus
+      outline: none
+  
+
+.feedback
+  background: url('../img/feedback/feedback-bg.jpg') no-repeat center
+  background-size: cover
+  &-block
+    
+.item
+  &__text
+    font-size: 24px
+    color: #ffffff
+    line-height: 32px
+    +SansLightIt
+    &:focus
+      outline: none
+  &__autor
+    display: flex
+    align-items: center
+    &_name
+      font-size: 14px
+      line-height: 42px
+    &_work
+      font-size: 16px
+      line-height: 26px
+      +SansSemibold
+    &_image
+      width: 59px
+      height: 59px
+    &_name, &_work
+      color: #ffffff
+  &__autorinfo
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    margin-left: 24px

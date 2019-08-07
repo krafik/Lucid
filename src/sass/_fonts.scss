@@ -32,6 +32,26 @@
   }
 
 @font-face {
+  font-family: 'Source Sans Pro Extra Light Italic';
+  src: url('../fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Italic.eot');
+  src: url('../fonts/SourceSansPro/SourceSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro/SourceSansPro-Italic.woff') format('woff'),
+  url('../fonts/SourceSansPro/SourceSansPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
   font-family: 'Source Sans Pro Semibold';
   src: url('../fonts/SourceSansPro/SourceSansPro-SemiBold.eot');
   src: url('../fonts/SourceSansPro/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
@@ -68,4 +88,11 @@
   font-family: 'Source Sans Pro Light', sans-serif;
 }
 
+@mixin SansRegIt {
+  font-family: 'Source Sans Pro Italic';
+}
+
+@mixin SansLightIt {
+  font-family: 'Source Sans Pro Extra Light Italic';
+}
 
