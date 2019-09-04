@@ -574,6 +574,15 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .section__descr_center:before {
+    left: 42.5%;
+  }
+  .section__descr_center:after {
+    right: 42.5%;
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
