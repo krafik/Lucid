@@ -1457,6 +1457,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .contacts {
+    padding-bottom: 60px;
+  }
   .contacts-block__inputs {
     margin-left: 40px;
   }
@@ -1464,6 +1467,8 @@ body {
     width: 200px;
   }
   .contacts-block__form {
+    top: 0;
+    margin: 30px auto;
     max-width: 500px;
   }
   .contacts-block__form_text textarea {
@@ -1471,6 +1476,9 @@ body {
   }
   .contacts-block__form_btn button {
     margin: 0 40px 40px 0;
+  }
+  .map {
+    display: none;
   }
 }
 
