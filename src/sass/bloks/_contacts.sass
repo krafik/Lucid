@@ -88,3 +88,46 @@
             margin: 0 40px 40px 0
   .map
     display: none
+@media (max-width: 576px)
+  .contacts
+    padding-bottom: 60px
+    &-block
+      &__contact
+        flex-direction: column
+        &_phone, &_coordinates, &_email
+          margin-bottom: 10px
+      &__inputs
+        margin-left: 0
+        input
+          width: 250px
+      &__form
+        &_data
+          flex-direction: column
+          align-items: center
+        &_text
+          margin-top: 0
+          margin-left: 0px
+          textarea
+            width: 250px
+        &_btn
+          justify-content: center
+          button
+            margin: 20px 0 20px 0
+
+
+// @media (max-width: 375px)
+//   .contacts
+//     padding-bottom: 60px
+//     &-block
+//       &__form
+//         &_data
+//           flex-direction: column
+//         &_text
+//           margin-top: 0
+//           margin-left: 65px
+//           textarea
+//             width: 200px
+//         &_btn
+//           justify-content: center
+//           button
+//             margin: 20px 0 20px 0
