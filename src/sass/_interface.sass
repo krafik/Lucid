@@ -59,6 +59,14 @@ body
     &_white
       color: #ffffff
 
+@media (max-width: 1199px)
+  .section
+    &__descr
+      &_center
+        &:before
+          left: 47.6%
+        &:after
+          right: 47.6%
 
 @media (max-width: 991px)
   .section
@@ -66,6 +74,12 @@ body
       font-size: 12px
     &__descr
       font-size: 26px
+      &_center
+        &:before
+          left: 47%
+        &:after
+          right: 47%
+      
 
 
 @media (max-width: 768px)
@@ -80,3 +94,12 @@ body
           left: 44%!important
         &:after
           right: 44%!important
+
+@media (max-width: 576px)
+  .section
+    &__descr
+      &_center
+        &:before
+          left: 46%
+        &:after
+          right: 46%
